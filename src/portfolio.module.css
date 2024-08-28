@@ -1,0 +1,119 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem;
+  font-family: "Baskervville SC", serif;
+}
+
+.imgPort {
+  margin-right: 5rem;
+  border-radius: 50%;
+  box-shadow: 20px 15px 20px rgb(82, 128, 174);
+}
+
+.name {
+  color: blue;
+}
+
+.progressContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Om det inte får plats på en rad */
+}
+.snackis{
+  border-radius: 1rem;
+  box-shadow: 1px 1px 20px rgb(40, 40, 115);
+}
+.progressItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  flex: 1; /* Tillåt flexibelt utrymme för varje progress bar */
+  overflow: hidden; /* Förhindra att animationen går utanför container */
+}
+.skillsEx{
+  box-shadow: 1px 1px 20px rgb(32, 32, 109);
+  border-radius: 0.5rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  text-align: center;
+  width: 50%;
+  padding: 2rem;
+  margin-left: 20rem;
+  color: aliceblue;
+  font-size: 1.5rem;
+}
+.button{
+  font-size: 1.5rem;
+  border-radius:2rem;
+  box-shadow: 1px 1px 10px rgb(12, 12, 103);
+  padding: 0.5rem;
+  color: white;
+  margin: 1rem;
+}
+.ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+li{
+  box-shadow: 1px 1px 20px rgb(48, 48, 165);
+  margin: 1rem;
+  border-radius: 2rem;
+  padding: 1rem;
+  background-color: rgb(45, 53, 101);
+  text-align: center;
+  color: white;
+}
+
+.skills {
+  margin-top: 9rem;
+  margin-bottom: 10rem;
+}
+.imgLog{
+  margin-right: 0.5rem;
+  background-color: transparent;
+}
+
+.about {
+  background: linear-gradient(109.6deg, rgb(103, 137, 181) 11.2%, rgb(255, 255, 255) 92.2%);
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  color: black;
+  font-size: 1.5rem;
+  position: relative; /* För att positionera den större bilden */
+  box-shadow: 1px 2px 20px rgb(32, 32, 113);
+  padding: 1rem; /* Lägg till padding för att få avstånd från kanterna */
+}
+
+.img {
+  width: 300px; /* Justera storleken på bilden */
+  height: auto;
+  position: absolute; /* Gör bilden positionerad utanför normala flödet */
+  top: -94px; /* Justera för att flytta upp bilden */
+  left: -57px; /* Justera för att flytta vänster */
+  /* Justera storleken så att bilden är större än sin behållare */
+}
+
+p {
+  margin: 0;
+  flex: 1;
+  z-index: 1; /* Gör så att texten ligger ovanpå bilden */
+}
+
+
+h1, h3 {
+  margin: 0;
+}
+
+
+
