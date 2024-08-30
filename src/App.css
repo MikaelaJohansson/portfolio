@@ -7,7 +7,8 @@
   justify-content: center;
   align-items: center;
   align-content: center;
-  
+  background-color: rgb(250, 241, 233);
+  box-shadow: 1px 10px 10px gray;
 }
 
 

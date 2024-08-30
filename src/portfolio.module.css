@@ -4,41 +4,34 @@
   align-items: center;
   margin-top: 2rem;
   border-radius: 0.5rem;
-  color: white;
+  color: black;
   font-size: 1.5rem;
   padding: 1rem;
-  font-family: "Baskervville SC", serif;
+  position: relative; /* Behövs för att positionera barnen absolut */
 }
+.imgLog{
+  padding: 0.5rem;
 
-.imgPort {
-  margin-right: 5rem;
-  border-radius: 50%;
-  box-shadow: 20px 15px 20px rgb(82, 128, 174);
 }
-
+.imgPort{
+  margin: 2rem;
+  background-image: radial-gradient(circle, rgb(226, 145, 70), rgb(242, 236, 231), rgb(188, 186, 246));
+  
+  border-radius: 20rem;
+}
 .name {
-  color: blue;
+  color:  #61a5f3;
+  z-index: 1; 
+  position: relative;
 }
 
-.progressContainer {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap; /* Om det inte får plats på en rad */
-}
 .snackis{
   border-radius: 1rem;
-  box-shadow: 1px 1px 20px rgb(40, 40, 115);
+  box-shadow: 1px 1px 20px  #621f69;
 }
-.progressItem {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px;
-  flex: 1; /* Tillåt flexibelt utrymme för varje progress bar */
-  overflow: hidden; /* Förhindra att animationen går utanför container */
-}
+
 .skillsEx{
-  box-shadow: 1px 1px 20px rgb(32, 32, 109);
+  box-shadow: 0px 5px 15px  #5a1f61;
   border-radius: 0.5rem;
   margin-top: 10rem;
   margin-bottom: 10rem;
@@ -46,44 +39,38 @@
   width: 50%;
   padding: 2rem;
   margin-left: 20rem;
-  color: aliceblue;
+  color: black;
   font-size: 1.5rem;
+  background: rgb(253, 253, 253);
 }
-.button{
+.buttonLink{
   font-size: 1.5rem;
   border-radius:2rem;
-  box-shadow: 1px 1px 10px rgb(12, 12, 103);
+  box-shadow: 1px 1px 10px #63206b;
   padding: 0.5rem;
-  color: white;
+  color: black;
   margin: 1rem;
+  background: white;
 }
 .ul {
   list-style-type: none;
   padding: 0;
   text-align: center;
 }
-
-li{
-  box-shadow: 1px 1px 20px rgb(48, 48, 165);
-  margin: 1rem;
-  border-radius: 2rem;
-  padding: 1rem;
-  background-color: rgb(45, 53, 101);
-  text-align: center;
-  color: white;
+.contact{
+  list-style: none;
+  color: black;
+  font-size: 1.5rem;
 }
+
 
 .skills {
   margin-top: 9rem;
   margin-bottom: 10rem;
 }
-.imgLog{
-  margin-right: 0.5rem;
-  background-color: transparent;
-}
 
 .about {
-  background: linear-gradient(109.6deg, rgb(103, 137, 181) 11.2%, rgb(255, 255, 255) 92.2%);
+  background-image: radial-gradient(circle, rgb(244, 249, 249), rgb(245, 232, 225), rgb(224, 228, 248));
   display: flex;
   align-items: center;
   margin-top: 2rem;
@@ -91,29 +78,87 @@ li{
   color: black;
   font-size: 1.5rem;
   position: relative; /* För att positionera den större bilden */
-  box-shadow: 1px 2px 20px rgb(32, 32, 113);
+  box-shadow:1px 4px 20px #85428d;
+  font-family: "Yanone Kaffeesatz", sans-serif;
   padding: 1rem; /* Lägg till padding för att få avstånd från kanterna */
 }
 
-.img {
-  width: 300px; /* Justera storleken på bilden */
+.imgRelaxt {
+  width: 360px; /* Justera storleken på bilden */
   height: auto;
   position: absolute; /* Gör bilden positionerad utanför normala flödet */
-  top: -94px; /* Justera för att flytta upp bilden */
-  left: -57px; /* Justera för att flytta vänster */
+  top: -149px; /* Justera för att flytta upp bilden */
+  left: -50px; /* Justera för att flytta vänster */
   /* Justera storleken så att bilden är större än sin behållare */
 }
 
 p {
+  font-family: "Yanone Kaffeesatz", sans-serif;
   margin: 0;
   flex: 1;
   z-index: 1; /* Gör så att texten ligger ovanpå bilden */
 }
 
+h1,h3,h2 {
+  margin: 0;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+.contactfooter{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  margin-top: 2rem;
+}
+.contactfooterIcon{
+  margin: 5rem;
+}
 
-h1, h3 {
+.container {
+  display: flex;
+  justify-content: space-between; /* Fördelar utrymmet mellan vänster, mitten och höger */
+  align-items: flex-start; /* Justerar alla element till toppen */
+  width: 100%; /* Full bredd av föräldraelementet */
+}
+
+.progressItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; /* Lägger till utrymme mellan progressItem */
+}
+
+.ul {
+  list-style-type: none;
+  padding: 0;
   margin: 0;
 }
+
+
+.liSkills{
+  box-shadow: 0px 2px 10px #6b2a72;
+  margin: 1rem;
+  border-radius: 0.1rem;
+  padding: 0.6rem;
+  background: rgb(255, 255, 255);
+  text-align: center;
+  color: black;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  margin: 1rem; 
+}
+
+.animationSkill{
+  position: relative;
+  top: 4rem;
+  color: #679bea;
+  width: 35rem;
+}
+
+
+
 
 
 

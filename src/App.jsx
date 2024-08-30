@@ -3,37 +3,43 @@ import React from 'react';
 import ProgressBar from './Components/ProgressBar'; // Kontrollera sökvägen
 import './App.css';
 import styles from './portfolio.module.css';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import animationData from './assets/animation1.json';
+import animationData2 from './assets/animation2.json';
+import Lottie from 'lottie-react';
+
 
 
 function App() {
+
+
   return (
     <div>
+       
       <section className={styles.header}>
-        <img className={styles.imgPort} src="/img/porträt.jpg" alt="jag" width={400} />
+      <img className={styles.imgPort} src="/img/jag_a.png" alt="jag" width={400}  />
+
+        
         <div>
           <h1>
-            <span className={styles.name}>Mikaela</span> Johansson
+            <span className={styles.name}>Mikaela</span> Johansson 
           </h1>
           <h3>Frontend-utvecklare / söker LIA</h3>
           <br />
-          <p>
-            Jag studerar till frontend-utvecklare med inriktning mot webbsäkerhet. 
-            Under min utbildning har jag fått omfattande kunskaper inom 
-            både frontend- och backend-utveckling. Jag har lärt mig att 
-            utveckla användargränssnitt med teknologier som HTML, CSS och JavaScript, 
-            och jag har specialiserat mig på React, som jag ser fram emot att bli helt 
-            flytande i. 
-            <br /> 
-            <br />
-            På backend-sidan har jag erfarenhet av att arbeta med databaser och serverhantering, inklusive teknologier som Node.js och Express, samt hantera SQL och NoSQL-databaser.
-            Jag har även fått utbildning i webbsäkerhet, där jag har lärt mig om 
-            säkerhetsåtgärder och bästa praxis för att skydda både frontend och backend. Detta inkluderar skydd mot vanliga säkerhetshot som XSS (Cross-Site Scripting), CSRF (Cross-Site Request Forgery), och SQL-injektioner.
+          <p className={styles.headerText}>
+            Jag studerar till frontend-utvecklare med inriktning mot webbsäkerhet jag 
+            har i min utbildning fått kunskaper inom både frontend- och backend-utveckling. 
+            Jag kan utveckla användargränssnitt med HTML, CSS, JavaScript och React.
             <br />
             <br />
-            Jag är mycket självgående och fokuserad på att förbättra min 
-            kodningshastighet och -effektivitet. Varje dag ser jag som en ny 
-            möjlighet att lära mig mer om den dynamiska och ständigt utvecklande 
-            världen av webbutveckling.
+            På backend-sidan har jag erfarenhet av databaser och serverhantering med 
+            Node.js, Express, samt SQL och NoSQL-databaser. 
+            Jag har även utbildning i 
+            webbsäkerhet och kan skydda mot vanliga hot som XSS,  CSRF och SQL-injektioner.
+            <br />
+            <br />
+            Jag är självgående och strävar efter att förbättra min 
+            kodningshastighet och effektivitet, och ser varje dag som en ny möjlighet att lära mig mer om den ständigt utvecklande webbutvecklingsvärlden.
           </p>
         </div>
       </section>
@@ -41,46 +47,64 @@ function App() {
       <br />
 
       <div className={styles.skills}>
-        <div className={styles.progressContainer}>
-          <div className={styles.progressItem}>
-            <ProgressBar percentage={63} width={200} height={200} />
-            <ul className={styles.ul}>
-              <li><img src='/img/html.png' alt="HTML" width={20} className={styles.imgLog} />HTML</li>
-              <li><img src='/img/css.png' alt="HTML" width={25} className={styles.imgLog} />CSS</li>
-              <li><img src='/img/bootstrap.png' alt="HTML" width={20} className={styles.imgLog} />Bootstrap</li>
-            </ul>
+        <div className={styles.container}>
+          <div className={styles.leftSide}>
+            <div className={styles.progressItem}>
+              <ProgressBar percentage={65} width={400} height={100} />
+              <ul className={styles.ul}>
+                <li className={styles.liSkills}><img src='/img/html.png' alt="HTML" width={20} className={styles.imgLog} />HTML</li>
+                <li className={styles.liSkills}><img src='/img/css.png' alt="CSS" width={25} className={styles.imgLog} />CSS</li>
+                <li className={styles.liSkills}><img src='/img/bootstrap.png' alt="Bootstrap" width={27} className={styles.imgLog} />Bootstrap</li>
+              </ul>
+            </div>
+            <div className={styles.progressItem}>
+              <ProgressBar percentage={60} width={400} height={100} />
+              <ul className={styles.ul}>
+                <li className={styles.liSkills}><img src='/img/gitGit.png' alt="Git" width={50} className={styles.imgLog} />git</li>
+                <li className={styles.liSkills}><img src='/img/github.png' alt="GitHub" width={30} className={styles.imgLog} />GitHub</li>
+                <li className={styles.liSkills}><img src='/img/figma.png' alt="Figma" width={23} className={styles.imgLog} />Figma</li>
+              </ul>
+            </div>
           </div>
-          <div className={styles.progressItem}>
-            <ProgressBar percentage={54} width={200} height={200} />
-            <ul className={styles.ul}>
-              <li><img src='/img/gitGit.png' alt="HTML" width={40} className={styles.imgLog} />git</li>
-              <li><img src='/img/github.png' alt="HTML" width={23} className={styles.imgLog} />GitHub</li>
-              <li><img src='/img/figma.png' alt="HTML" width={23} className={styles.imgLog} />Figma</li>
-            </ul>
+
+
+          <div className={styles.animationSkill}>
+            <h1>Färdigheter</h1>
+            <Lottie 
+              animationData={animationData} 
+              loop={true} 
+              autoplay={true} 
+              
+            />
           </div>
-          <div className={styles.progressItem}>
-            <ProgressBar percentage={43} width={200} height={200} />
-            <ul className={styles.ul}>
-              <li><img src='/img/react.png' alt="HTML" width={20} className={styles.imgLog} />React</li>
-              <li><img src='/img/api.png' alt="HTML" width={25} className={styles.imgLog} />API</li>
-              <li><img src='/img/js.png' alt="HTML" width={23} className={styles.imgLog} />JavaScript</li>
-            </ul>
-          </div>
-          <div className={styles.progressItem}>
-            <ProgressBar percentage={39} width={200} height={200} />
-            <ul className={styles.ul}>
-              <li><img src='/img/sql.png' alt="HTML" width={20} className={styles.imgLog} />SQL</li>
-              <li><img src='/img/js.png' alt="HTML" width={20} className={styles.imgLog} />Express</li>
-              <li><img src='/img/node.js.png' alt="HTML" width={23} className={styles.imgLog} />Node.js</li>
-            </ul>
+
+
+
+          <div className={styles.rightSide}>
+            <div className={styles.progressItem}>
+              <ProgressBar percentage={60} width={400} height={100} />
+              <ul className={styles.ul}>
+                <li className={styles.liSkills}><img src='/img/react.png' alt="React" width={20} className={styles.imgLog} />React</li>
+                <li className={styles.liSkills}><img src='/img/api.png' alt="API" width={25} className={styles.imgLog} />API</li>
+                <li className={styles.liSkills}><img src='/img/js.png' alt="JavaScript" width={23} className={styles.imgLog} />JavaScript</li>
+              </ul>
+            </div>
+            <div className={styles.progressItem}>
+              <ProgressBar percentage={50} width={400} height={100} />
+              <ul className={styles.ul}>
+                <li className={styles.liSkills}><img src='/img/sql.png' alt="SQL" width={20} className={styles.imgLog} />SQL</li>
+                <li className={styles.liSkills}><img src='/img/js.png' alt="Express" width={20} className={styles.imgLog} />Express</li>
+                <li className={styles.liSkills}><img src='/img/node.js.png' alt="Node.js" width={30} className={styles.imgLog} />Node.js</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
+
       <br />
 
-      <h2>Om mig</h2>
       <section className={styles.about}>
-        <img className={styles.img} src="/img/jag.png" alt="jag" />
+        <img className={styles.imgRelaxt} src="/img/jag.png" alt="jag" />
         <p>
           Ålder: 37 <br />
           Bor: Stockholm. <br />
@@ -92,6 +116,7 @@ function App() {
 
       <section className={styles.skillsEx}>
         <h2>Ett av mina projekt</h2>
+        <br />
         <div>
           <img className={styles.snackis} src="/img/snackis.png" alt="smakprov" height={240} />
           <br />
@@ -106,11 +131,16 @@ function App() {
             om så önskas.
           </p>
           <br />
-          <a className={styles.button} href="https://github.com/MikaelaJohansson/react-chat-app.git" target="_blank" class="button-link">
+          <a 
+            className={styles.buttonLink} 
+            href="https://github.com/MikaelaJohansson/react-chat-app.git" 
+            target="_blank" 
+            rel="noopener noreferrer" // För säkerhet, skyddar mot relaterade säkerhetsproblem
+          >
             GitHub
           </a>
           <a 
-            className={styles.button} 
+            className={styles.buttonLink} 
             href="https://snackis.netlify.app" 
             target="_blank" 
             rel="noopener noreferrer" // För säkerhet, skyddar mot relaterade säkerhetsproblem
@@ -120,11 +150,33 @@ function App() {
         </div>
       </section>
 
-      <footer>
-        <h3>kontackta mig</h3>
+      <div className={styles.vog} >
+       <button>Skriv till mig</button>
+      </div>
+      <br />
+      <br />
+      <hr></hr>
+      <footer className={styles.contactfooter} >
+        <ul> 
+          <li className={styles.contact}>Kontakta mig:</li>
+          <li className={styles.contact}>E-post: mikaela.johansson@gmail.com</li>
+          <li className={styles.contact}>Telefon: 073 659 39 14</li>
+          <li className={styles.contact}>Plats: Stockholm,Sweden</li>
+        </ul>
+        <div className={styles.contactfooterIcon}>
+          {/* GitHub ikon och länk */}
+          <a href="https://github.com/MikaelaJohansson" target="_blank" rel="noopener noreferrer">
+            <FaGithub size={50} />
+          </a>         
+          <a href="https://linkedin.com/in/mikaela-johansson-6a59b82a5" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin size={50} />
+          </a>
+        </div>
       </footer>
     </div>
+    
   );
+  
 }
 
 export default App;

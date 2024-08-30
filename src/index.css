@@ -29,7 +29,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background: linear-gradient(65.5deg, rgb(23, 205, 205) -15.1%, rgb(23, 25, 95) 71.5%);
+  background: linear-gradient(106.7deg, rgb(209, 208, 247) 12.1%, rgb(247, 221, 237) 63.2%); /* Horisontell centrering */
 }
 
 h1 {

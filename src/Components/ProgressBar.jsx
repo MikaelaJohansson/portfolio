@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import Lottie from 'lottie-web';
-import progressBarData from "../assets/progres.json";
+import progressBarData from "../assets/progressBar.json";
 
 const ProgressBar = ({ percentage, width, height }) => {
   const containerRef = useRef(null);
