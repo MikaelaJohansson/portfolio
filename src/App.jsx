@@ -155,11 +155,11 @@ function App() {
           <br />
           <br />
           <p>
-            Ett av mina projekt som speglar min nuvarande kompetensnivå. <br /> 
+            Ett av mina projekt som speglar min nuvarande kompetensnivå.  
             Projektet är en chattapplikation där användare kan skapa ett konto, 
-            logga in,  <br />  skriva och posta meddelanden samt bjuda in andra till chattar.
-            Applikationen innehåller <strong>Vite, API:er, Git/GitHub, lösenordsskyddad, CSRF-Token, <br /> 
-            JWT, Session-/LocalStorage, CSP policy, monitorering av loggar på Sentry, <br /> 
+            logga in,skriva och posta meddelanden samt bjuda in andra till chattar.
+            Applikationen innehåller: <br /><strong>Vite,  API:er,  Git/GitHub,  lösenordsskyddad, CSRF-Token, 
+            JWT, Session-/LocalStorage, CSP policy, monitorering av loggar på Sentry, 
             Crypto.randomUUID och bilder hostas på freeimage.</strong> 
           </p>
           <br />
@@ -189,9 +189,9 @@ function App() {
           <p>
            På min portfolio kan du utforska smakprov av projekt <br /> 
            och läsa mer om mina arbeten.  
-           Här hittar du även en länk till min GitHub, <br /> 
+           Här hittar du även en länk till min GitHub, 
            där du kan se källkoden till denna portfolio och andra projekt jag har skapat. <br /> 
-           Besök gärna min GitHub för att få en djupare inblick <br /> 
+           Besök gärna min GitHub för att få en djupare inblick 
            i min kod och utvecklingsprocess. 
           </p>
           <br />

@@ -33,7 +33,7 @@
   box-shadow: 1px 1px 2px rgb(254, 198, 166);
   padding: 0.7rem;
   border-radius: 2rem;
-  background-image: radial-gradient(rgb(249, 244, 230), rgb(251, 248, 221), rgb(249, 230, 141));
+  background-image: radial-gradient(rgb(251, 231, 175), rgb(251, 248, 221), rgb(251, 216, 171));
 }
 .imgPort{
   margin: 2rem;
@@ -96,20 +96,23 @@
   justify-content: center;
   align-content: center;
   width:90%;
-  margin-top: 2rem;
+  margin-top: 6rem;
+  margin-bottom: 9rem;
   border-radius: 0.5rem;
   color: black;
   font-size: 1.5rem;
+  font-size: 2rem;
   position: relative; 
   box-shadow: 1px 1px 10px #c299f7;
   font-family: "Yanone Kaffeesatz", sans-serif;
   padding: 1rem; 
+  font-weight: 600;
 }
 .imgRelaxt {
   width: 360px; 
   height: auto;
   position: absolute; 
-  top: -149px; 
+  top: -100px; 
   left: -50px; 
 }
 
@@ -117,6 +120,7 @@
 .snackis{
   border-radius: 1rem;
   box-shadow: 1px 1px 20px  #212945;
+  
 }
 .portfolioImg{
   border-radius: 1rem;
@@ -125,33 +129,28 @@
 .skillsSnackis{
   box-shadow: 3px 3px 10px  #c7f5d3;
   border-radius: 0.5rem;
-  margin-top: 10rem;
-  margin-bottom: 10rem;
   text-align: center;
-  width: 40%;
   padding: 2rem;
-  margin: 2rem;
+  margin: 5rem;
   color: black;
   font-size: 1.8rem;
-  background-image: radial-gradient(rgb(246, 248, 244), rgb(206, 248, 209), rgb(230, 249, 230));
+  background-image: radial-gradient(rgb(246, 248, 244), rgb(223, 250, 225), rgb(230, 249, 230));
 }
 .portfolio{
-  box-shadow: 3px 3px 10px  #c7f5d3;
+  box-shadow: 3px 3px 10px #c7f5d3;
   border-radius: 0.5rem;
-  margin-top: 10rem;
-  margin-bottom: 10rem;
   text-align: center;
-  width: 40%;
   padding: 2rem;
   color: black;
+  padding-bottom: 7rem;
   font-size: 1.8rem;
-  background-image: radial-gradient(rgb(246, 248, 244), rgb(206, 248, 209), rgb(230, 249, 230));
+  background-image: radial-gradient(rgb(246, 248, 244), rgb(221, 248, 222), rgb(230, 249, 230));
 }
 .buttonLink{
   font-size: 1.5rem;
   border-radius:2rem;
-  box-shadow: 1px 1px 5px #9f95c1;
-  padding: 0.5rem;
+  box-shadow: 1px 1px 5px #212122;
+  padding: 1rem;
   color: black;
   margin: 1rem;
   background: white;
@@ -161,42 +160,45 @@
   justify-content: center;
   align-content: center;
   align-items: center;
+  width: 50%;
 }
 
 /* send message */
 .messageName{
-  font-size: 1.4rem;
-  text-align: center;
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  padding: 0.2rem;
-  border-radius: 0.3rem;
-  background-color: rgb(253, 246, 247);
-  color: black;
-}
-.messageInput{
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
   font-family: "Yanone Kaffeesatz", sans-serif;
   padding: 1rem;
   border-radius: 0.3rem;
   background-color: rgb(253, 246, 247);
   color: black;
+  margin-top: 9rem;
+}
+.messageInput{
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  padding: 6rem;
+  border-radius: 0.3rem;
+  background-color: rgb(253, 246, 247);
+  color: black;
 }
 .messageButton{
   font-family: "Yanone Kaffeesatz", sans-serif;
-  font-size: 1.3rem;
-  margin-top: 1rem;
+  font-size: 2rem;
+  margin-top: 2rem;
   border-radius: 3rem;
   background-color: #9fc9f9;
-  box-shadow: 2px 4px 3px rgb(204, 204, 206)
+  box-shadow: 2px 4px 3px rgb(204, 204, 206);
+  margin-bottom: 5rem;
 }
 .messageButtonStart{
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 2rem;
   margin-top: 1rem;
   border-radius: 3rem;
-  background-color: #9fc9f9;
-  box-shadow: 2px 4px 3px rgb(204, 204, 206)
+  background-image: radial-gradient(rgb(254, 254, 254), rgb(247, 198, 235), rgb(255, 201, 234));
+  box-shadow: 2px 4px 3px rgb(247, 158, 211)
 }
 
 /* footer */
@@ -210,7 +212,6 @@
   width: 100%; 
   padding: 1rem; 
   box-sizing: border-box;
-  
 }
 .contactfooterIcon{
   margin: 5rem;
