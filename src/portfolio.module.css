@@ -1,3 +1,13 @@
+
+.mainContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+/* header text */
 .header {
   display: flex;
   flex-direction: row;
@@ -7,9 +17,9 @@
   align-content: center;
   margin-top: 2rem;
   border-radius: 0.5rem;
-  color: black;
+  color: white;
   font-size: 1.5rem;
-  position: relative; /* Behövs för att positionera barnen absolut */
+  position: relative; 
 }
 .headerText{
   text-align:left;
@@ -18,99 +28,69 @@
   margin-left: 8rem;
   margin-top: 2rem;
 }
-.imgLog{
-  padding: 0.5rem;
-
+.cvLank{
+  font-size: 1.5rem;
+  box-shadow: 1px 1px 2px rgb(254, 198, 166);
+  padding: 0.7rem;
+  border-radius: 2rem;
+  background-image: radial-gradient(rgb(249, 244, 230), rgb(251, 248, 221), rgb(249, 230, 141));
 }
 .imgPort{
   margin: 2rem;
-  background-image: radial-gradient(circle, rgb(250, 249, 248), rgb(246, 217, 193), rgb(212, 248, 239), rgb(246, 225, 245),rgb(209, 208, 247)75.0%);
+  box-shadow: 1px 1px 1px rgb(244, 223, 185);
   padding-left: 10rem;
   border-radius: 20rem;
 }
 .name {
-  color:  #61a5f3;
+  color:  #789ef8;
   z-index: 1; 
   position: relative;
 }
 
-.snackis{
-  border-radius: 1rem;
-  box-shadow: 1px 1px 20px  #621f69;
-}
-.portfolioImg{
-  border-radius: 1rem;
-  box-shadow: 1px 1px 20px  #621f69;
-}
-
-.skillsSnackis{
-  box-shadow: 0px 5px 15px  #5a1f61;
-  border-radius: 0.5rem;
-  margin-top: 10rem;
-  margin-bottom: 10rem;
-  text-align: center;
-  width: 40%;
-  padding: 2rem;
-  margin: 2rem;
-  color: black;
-  font-size: 1.8rem;
-  background: rgb(253, 253, 253);
-}
-.portfolio{
-  box-shadow: 0px 5px 15px  #5a1f61;
-  border-radius: 0.5rem;
-  margin-top: 10rem;
-  margin-bottom: 10rem;
-  text-align: center;
-  width: 40%;
-  padding: 2rem;
-  
-  color: black;
-  font-size: 1.8rem;
-  background: rgb(253, 253, 253);
-}
-.skillsContainer{
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-}
-.buttonLink{
-  font-size: 1.5rem;
-  border-radius:2rem;
-  box-shadow: 1px 1px 10px #63206b;
-  padding: 0.5rem;
-  color: black;
-  margin: 1rem;
-  background: white;
-}
+/* skills */
 .ul {
   list-style-type: none;
   padding: 0;
   text-align: center;
 }
-.contact{
-  list-style: none;
-  color: black;
-  font-size: 1.5rem;
+.imgLog{
+  padding: 1rem;
 }
-
-
 .skills {
   margin-top: 9rem;
   margin-bottom: 10rem;
   margin: 5rem;
-  
 }
-.mainContainer{
+.progressItem {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  align-content: center;
+  margin-bottom: 20px; 
 }
+.liSkills{
+  box-shadow: 4px 4px 5px rgb(96, 188, 249);
+  margin: 1rem;
+  border-radius: 3rem;
+  padding: 0.6rem;
+  background-image: radial-gradient(rgb(224, 240, 250), rgb(206, 224, 248), rgb(182, 203, 246));
+  text-align: center;
+  color: black;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin: 1rem; 
+}
+.animationSkill{
+  position: relative;
+  top: 4rem;
+  color: #679bea;
+  width: 50rem;
+}
+
+/* about */
 .about {
-  background-image: radial-gradient(circle, rgb(244, 249, 249), rgb(245, 232, 225), rgb(224, 228, 248));
+  background-image: radial-gradient(circle, rgb(245, 244, 249), rgb(218, 188, 246), rgb(224, 228, 248));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -120,96 +100,70 @@
   border-radius: 0.5rem;
   color: black;
   font-size: 1.5rem;
-  position: relative; /* För att positionera den större bilden */
-  box-shadow:1px 4px 20px #85428d;
+  position: relative; 
+  box-shadow: 1px 1px 10px #c299f7;
   font-family: "Yanone Kaffeesatz", sans-serif;
-  padding: 1rem; /* Lägg till padding för att få avstånd från kanterna */
+  padding: 1rem; 
 }
-
 .imgRelaxt {
-  width: 360px; /* Justera storleken på bilden */
+  width: 360px; 
   height: auto;
-  position: absolute; /* Gör bilden positionerad utanför normala flödet */
-  top: -149px; /* Justera för att flytta upp bilden */
-  left: -50px; /* Justera för att flytta vänster */
-  /* Justera storleken så att bilden är större än sin behållare */
+  position: absolute; 
+  top: -149px; 
+  left: -50px; 
 }
 
-p {
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  margin: 0;
-  flex: 1;
-  z-index: 1; /* Gör så att texten ligger ovanpå bilden */
+/* portfolio show */
+.snackis{
+  border-radius: 1rem;
+  box-shadow: 1px 1px 20px  #212945;
 }
-
-h1,h3,h2 {
-  margin: 0;
-  font-family: "Yanone Kaffeesatz", sans-serif;
+.portfolioImg{
+  border-radius: 1rem;
+  box-shadow: 1px 1px 20px  #212945;
 }
-.contactfooter{
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  margin-top: 2rem;
-  border-top: 2px solid black;
-  width: 100%; /* Se till att fottern täcker hela bredden */
-  padding: 1rem; /* Lägg till padding för lite utrymme inuti fottern */
-  box-sizing: border-box;
-}
-.contactfooterIcon{
-  margin: 5rem;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between; /* Fördelar utrymmet mellan vänster, mitten och höger */
-  align-items: flex-start; /* Justerar alla element till toppen */
-  width: 100%; /* Full bredd av föräldraelementet */
-}
-
-.progressItem {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px; /* Lägger till utrymme mellan progressItem */
-}
-
-.ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-
-.liSkills{
-  box-shadow: 0px 2px 10px #6b2a72;
-  margin: 1rem;
-  border-radius: 3rem;
-  padding: 0.6rem;
-  background: rgb(255, 255, 255);
+.skillsSnackis{
+  box-shadow: 3px 3px 10px  #c7f5d3;
+  border-radius: 0.5rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
   text-align: center;
+  width: 40%;
+  padding: 2rem;
+  margin: 2rem;
   color: black;
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  background-image: radial-gradient(rgb(246, 248, 244), rgb(206, 248, 209), rgb(230, 249, 230));
+}
+.portfolio{
+  box-shadow: 3px 3px 10px  #c7f5d3;
+  border-radius: 0.5rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  text-align: center;
+  width: 40%;
+  padding: 2rem;
+  color: black;
+  font-size: 1.8rem;
+  background-image: radial-gradient(rgb(246, 248, 244), rgb(206, 248, 209), rgb(230, 249, 230));
+}
+.buttonLink{
+  font-size: 1.5rem;
+  border-radius:2rem;
+  box-shadow: 1px 1px 5px #9f95c1;
+  padding: 0.5rem;
+  color: black;
+  margin: 1rem;
+  background: white;
+}
+.portfolioContainer{
   display: flex;
+  justify-content: center;
+  align-content: center;
   align-items: center;
-  margin: 1rem; 
 }
 
-.animationSkill{
-  position: relative;
-  top: 4rem;
-  color: #679bea;
-  width: 50rem;
-}
-.cvLank{
-  font-size: 1.5rem;
-  box-shadow: 1px 2px 5px gray;
-  padding: 0.7rem;
-  border-radius: 2rem;
- 
-}
+/* send message */
 .messageName{
   font-size: 1.4rem;
   text-align: center;
@@ -244,6 +198,59 @@ h1,h3,h2 {
   background-color: #9fc9f9;
   box-shadow: 2px 4px 3px rgb(204, 204, 206)
 }
+
+/* footer */
+.contactfooter{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  margin-top: 2rem;
+  border-top: 2px solid rgb(252, 252, 252);
+  width: 100%; 
+  padding: 1rem; 
+  box-sizing: border-box;
+  
+}
+.contactfooterIcon{
+  margin: 5rem;
+}
+.contact{
+  list-style: none;
+  color: white;
+  font-size: 2rem;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start; 
+  width: 100%; 
+}
+
+
+
+
+/* rest */
+.ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+p {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  margin: 0;
+  flex: 1;
+  z-index: 1;
+}
+
+h1,h3,h2 {
+  margin: 0;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+
+
 
 
 

@@ -31,7 +31,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background: linear-gradient(106.7deg, rgb(209, 208, 247) 12.1%, rgb(247, 221, 237) 63.2%); /* Horisontell centrering */
+  background: linear-gradient(106.7deg, rgb(3, 28, 64) 10.1%, rgb(5, 5, 27) 63.2%); /* Horisontell centrering */
 }
 
 h1 {

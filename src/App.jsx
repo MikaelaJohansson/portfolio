@@ -49,8 +49,6 @@ function App() {
   return (
     <div className={styles.mainContainer}>
 
-     
-
       <section className={styles.header}>
        <img className={styles.imgPort} src="/img/jag_a.png" alt="jag" width={400}  />
         <div>
@@ -145,12 +143,12 @@ function App() {
           Ålder: 37 <br />
           Bor: Stockholm. <br />
           Familj: Sambo, 3 hundar. <br />
-          Intressen: Historia, gamla civilisationer.
+          Intressen: Historia, förhistoriska civilisationer.
         </p>     
       </section>
 
 
-      <section className={styles.skillsContainer} >
+      <section className={styles.portfolioContainer} >
         <div className={styles.skillsSnackis}>
           <h2>Projekt Snackis</h2>
           <img className={styles.snackis} src="/img/snackis.png" alt="smakprov" width={500} />
@@ -160,7 +158,7 @@ function App() {
             Ett av mina projekt som speglar min nuvarande kompetensnivå. <br /> 
             Projektet är en chattapplikation där användare kan skapa ett konto, 
             logga in,  <br />  skriva och posta meddelanden samt bjuda in andra till chattar.
-            Applikationen hanterar <strong>Vite, API:er, lösenordsskyddad, CSRF-Token, <br /> 
+            Applikationen innehåller <strong>Vite, API:er, Git/GitHub, lösenordsskyddad, CSRF-Token, <br /> 
             JWT, Session-/LocalStorage, CSP policy, monitorering av loggar på Sentry, <br /> 
             Crypto.randomUUID och bilder hostas på freeimage.</strong> 
           </p>
@@ -265,7 +263,7 @@ function App() {
           {/* GitHub ikon och länk */}
           <a href="https://github.com/MikaelaJohansson" target="_blank" rel="noopener noreferrer">
             <FaGithub size={50} />
-          </a>         
+          </a>       
           <a href="https://linkedin.com/in/mikaela-johansson-6a59b82a5" target="_blank" rel="noopener noreferrer">
             <FaLinkedin size={50} />
           </a>
