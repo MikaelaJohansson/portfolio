@@ -217,6 +217,7 @@ h1,h3,h2 {
   padding: 0.2rem;
   border-radius: 0.3rem;
   background-color: rgb(253, 246, 247);
+  color: black;
 }
 .messageInput{
   font-size: 3rem;
@@ -225,6 +226,7 @@ h1,h3,h2 {
   padding: 1rem;
   border-radius: 0.3rem;
   background-color: rgb(253, 246, 247);
+  color: black;
 }
 .messageButton{
   font-family: "Yanone Kaffeesatz", sans-serif;

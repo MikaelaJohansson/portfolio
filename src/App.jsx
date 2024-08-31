@@ -158,11 +158,11 @@ function App() {
           <br />
           <p>
             Ett av mina projekt som speglar min nuvarande kompetensnivå. <br /> 
-            Projektet är en chattapplikation där användare kan skapa ett konto, <br /> 
-            logga in, skriva och posta meddelanden samt bjuda in andra till chattar. <br /> 
-            Applikationen hanterar vite, apier, lösenordsskyddad, CSRF token, <br /> 
-            JWT, session-/localStorage, CSP policy, monitorering av loggar på Sentry, <br /> 
-            crypto.randomUUID och bilder hostas på freeimage. 
+            Projektet är en chattapplikation där användare kan skapa ett konto, 
+            logga in,  <br />  skriva och posta meddelanden samt bjuda in andra till chattar.
+            Applikationen hanterar <strong>Vite, API:er, lösenordsskyddad, CSRF-Token, <br /> 
+            JWT, Session-/LocalStorage, CSP policy, monitorering av loggar på Sentry, <br /> 
+            Crypto.randomUUID och bilder hostas på freeimage.</strong> 
           </p>
           <br />
           <a 
@@ -207,7 +207,7 @@ function App() {
           </a>
           <a 
             className={styles.buttonLink} 
-            href="https://snackis.netlify.app" 
+            href="https://mikisportfolio.netlify.app/" 
             target="_blank" 
             rel="noopener noreferrer" // För säkerhet, skyddar mot relaterade säkerhetsproblem
           >
@@ -257,7 +257,7 @@ function App() {
       <footer className={styles.contactfooter}>
         <ul>
           <li className={styles.contact}>Kontakta mig:</li>
-          <li className={styles.contact}>E-post: mikaela.johansson@gmail.com</li>
+          <li className={styles.contact}>E-post: mikaela.johansson87@gmail.com</li>
           <li className={styles.contact}>Telefon: 073 659 39 14</li>
           <li className={styles.contact}>Plats: Stockholm, Sweden</li>
         </ul>
