@@ -1,14 +1,10 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
   padding: 2rem;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
-  background-color: rgb(250, 241, 233);
-  box-shadow: 1px 10px 10px gray;
 }
 
 

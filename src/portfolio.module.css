@@ -2,12 +2,21 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   margin-top: 2rem;
   border-radius: 0.5rem;
   color: black;
   font-size: 1.5rem;
-  padding: 1rem;
   position: relative; /* Behövs för att positionera barnen absolut */
+}
+.headerText{
+  text-align:left;
+  font-size: 2rem; 
+  width: fit-content;
+  margin-left: 8rem;
+  margin-top: 2rem;
 }
 .imgLog{
   padding: 0.5rem;
@@ -15,8 +24,8 @@
 }
 .imgPort{
   margin: 2rem;
-  background-image: radial-gradient(circle, rgb(226, 145, 70), rgb(242, 236, 231), rgb(188, 186, 246));
-  
+  background-image: radial-gradient(circle, rgb(250, 249, 248), rgb(246, 217, 193), rgb(212, 248, 239), rgb(246, 225, 245),rgb(209, 208, 247)75.0%);
+  padding-left: 10rem;
   border-radius: 20rem;
 }
 .name {
@@ -29,19 +38,42 @@
   border-radius: 1rem;
   box-shadow: 1px 1px 20px  #621f69;
 }
+.portfolioImg{
+  border-radius: 1rem;
+  box-shadow: 1px 1px 20px  #621f69;
+}
 
-.skillsEx{
+.skillsSnackis{
   box-shadow: 0px 5px 15px  #5a1f61;
   border-radius: 0.5rem;
   margin-top: 10rem;
   margin-bottom: 10rem;
   text-align: center;
-  width: 50%;
+  width: 40%;
   padding: 2rem;
-  margin-left: 20rem;
+  margin: 2rem;
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   background: rgb(253, 253, 253);
+}
+.portfolio{
+  box-shadow: 0px 5px 15px  #5a1f61;
+  border-radius: 0.5rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  text-align: center;
+  width: 40%;
+  padding: 2rem;
+  
+  color: black;
+  font-size: 1.8rem;
+  background: rgb(253, 253, 253);
+}
+.skillsContainer{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 .buttonLink{
   font-size: 1.5rem;
@@ -67,12 +99,23 @@
 .skills {
   margin-top: 9rem;
   margin-bottom: 10rem;
+  margin: 5rem;
+  
 }
-
+.mainContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
 .about {
   background-image: radial-gradient(circle, rgb(244, 249, 249), rgb(245, 232, 225), rgb(224, 228, 248));
   display: flex;
   align-items: center;
+  justify-content: center;
+  align-content: center;
+  width:90%;
   margin-top: 2rem;
   border-radius: 0.5rem;
   color: black;
@@ -106,9 +149,13 @@ h1,h3,h2 {
 .contactfooter{
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
+  justify-content: space-around;
   font-family: "Yanone Kaffeesatz", sans-serif;
   margin-top: 2rem;
+  border-top: 2px solid black;
+  width: 100%; /* Se till att fottern täcker hela bredden */
+  padding: 1rem; /* Lägg till padding för lite utrymme inuti fottern */
+  box-sizing: border-box;
 }
 .contactfooterIcon{
   margin: 5rem;
@@ -138,13 +185,13 @@ h1,h3,h2 {
 .liSkills{
   box-shadow: 0px 2px 10px #6b2a72;
   margin: 1rem;
-  border-radius: 0.1rem;
+  border-radius: 3rem;
   padding: 0.6rem;
   background: rgb(255, 255, 255);
   text-align: center;
   color: black;
   font-family: "Yanone Kaffeesatz", sans-serif;
-  font-size: 1.2rem;
+  font-size: 2rem;
   display: flex;
   align-items: center;
   margin: 1rem; 
@@ -154,11 +201,47 @@ h1,h3,h2 {
   position: relative;
   top: 4rem;
   color: #679bea;
-  width: 35rem;
+  width: 50rem;
 }
-
-
-
+.cvLank{
+  font-size: 1.5rem;
+  box-shadow: 1px 2px 5px gray;
+  padding: 0.7rem;
+  border-radius: 2rem;
+ 
+}
+.messageName{
+  font-size: 1.4rem;
+  text-align: center;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  padding: 0.2rem;
+  border-radius: 0.3rem;
+  background-color: rgb(253, 246, 247);
+}
+.messageInput{
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  background-color: rgb(253, 246, 247);
+}
+.messageButton{
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  border-radius: 3rem;
+  background-color: #9fc9f9;
+  box-shadow: 2px 4px 3px rgb(204, 204, 206)
+}
+.messageButtonStart{
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 2rem;
+  margin-top: 1rem;
+  border-radius: 3rem;
+  background-color: #9fc9f9;
+  box-shadow: 2px 4px 3px rgb(204, 204, 206)
+}
 
 
 
