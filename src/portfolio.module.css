@@ -5,6 +5,8 @@
   justify-content: center;
   align-items: center;
   align-content: center;
+  width: 100%;
+  
 }
 
 /* header text */
@@ -15,27 +17,28 @@
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
   border-radius: 0.5rem;
-  color: whitesmoke;
+  color: rgb(204, 204, 204);
   font-size: 1.5rem;
   position: relative; 
+  width: fit-content;
 }
 .headerText{
   text-align:left;
-  font-size: 2.4rem; 
+  font-size: 1.5rem; 
   width: fit-content;
-  margin-left: 8rem;
   margin-top: 5rem;
   margin-bottom: 8rem;
 }
 .cvLank{
-  font-size: 1.8rem;
-  box-shadow: 1px 1px 2px rgb(254, 198, 166);
+  font-size: 1.2rem;
+  box-shadow: 1px 1px 2px rgb(22, 22, 21);
   padding: 0.7rem;
   border-radius: 2rem;
-  color: #8d3bf8;
-  background-image: radial-gradient(rgb(251, 231, 175), rgb(251, 248, 221), rgb(251, 216, 171));
+  color: #5c515b;
+  width: fit-content;
+  background-color:rgb(221, 208, 221);
 }
 .imgPort{
   margin: 2rem;
@@ -50,35 +53,43 @@
 }
 
 /* skills */
+.container {
+  display: flex;
+  align-items: center; 
+  width: fit-content;
+  
+}
 .ul {
   list-style-type: none;
   padding: 0;
   text-align: center;
 }
 .imgLog{
-  padding: 1rem;
+  padding: 0.5rem;
 }
-.skills {
-  margin-top: 9rem;
-  margin-bottom: 10rem;
-  margin: 5rem;
-}
+
 .progressItem {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px; 
+  width: fit-content;
+}
+.rightSide{
+  position: relative;
+  top: -0.4rem;
+  margin-left: 2rem;
+  width: fit-content;
 }
 .liSkills{
   box-shadow: 4px 4px 5px rgb(96, 188, 249);
-  margin: 1rem;
   border-radius: 3rem;
   padding-right: 1rem;
   background-image: radial-gradient(rgb(224, 240, 250), rgb(206, 224, 248), rgb(182, 203, 246));
   text-align: center;
   color: black;
   font-family: "Yanone Kaffeesatz", sans-serif;
-  font-size: 2rem;
+  font-size: 1.1rem;
   display: flex;
   align-items: center;
   margin: 1rem; 
@@ -86,36 +97,42 @@
 .animationSkill{
   position: relative;
   color: #d897f9;
-  width: 50rem;
-  font-size: 1.6rem;
+  width: fit-content;
+  font-size: 1rem;
+  width: 40%;
+  margin-left:6rem ;
+  padding: 2rem;
 }
 
 /* about */
-
+.aboutText{
+  margin-left: 30rem;
+  width: fit-content;
+  padding-right: 15rem;
+}
 .about {
   background-image: radial-gradient(circle, rgb(245, 244, 249), rgb(218, 188, 246), rgb(224, 228, 248));
   display: flex;
   align-items: center;
   justify-content: center;
   align-content: center;
-  width:90%;
   margin-top: 6rem;
   margin-bottom: 9rem;
   border-radius: 0.5rem;
   color: black;
-  font-size: 1.5rem;
-  font-size: 2rem;
+  width: fit-content;
+  font-size: 1.3rem;
   position: relative; 
   box-shadow: 1px 1px 10px #c299f7;
   font-family: "Yanone Kaffeesatz", sans-serif;
-  padding: 3rem; 
-  font-weight: 600;
+  padding: 3rem;
+  font-weight: 400;
 }
 .imgRelaxt {
-  width: 360px; 
+  width: 300px; 
   height: auto;
   position: absolute; 
-  top: -100px; 
+  top: -92px; 
   left: -50px; 
 }
 
@@ -135,8 +152,9 @@
   text-align: center;
   padding: 2rem;
   margin: 5rem;
+  width: fit-content;
   color: black;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   background-image: radial-gradient(rgb(246, 248, 244), rgb(223, 250, 225), rgb(230, 249, 230));
 }
 .portfolio{
@@ -144,15 +162,18 @@
   border-radius: 0.5rem;
   text-align: center;
   padding: 2rem;
+  width: fit-content;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   color: black;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   background-image: radial-gradient(rgb(246, 248, 244), rgb(221, 248, 222), rgb(230, 249, 230));
 }
 .buttonLink{
-  font-size: 1.5rem;
+  font-size: 1rem;
   border-radius:2rem;
   box-shadow: 1px 1px 5px #212122;
-  padding: 1rem;
+  padding: 0.5rem;
   color: black;
   margin: 1rem;
   background: white;
@@ -167,17 +188,17 @@
 
 /* send message */
 .messageName{
-  font-size: 2rem;
+  font-size: 1rem;
   text-align: center;
   font-family: "Yanone Kaffeesatz", sans-serif;
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 0.3rem;
   background-color: rgb(253, 246, 247);
   color: black;
   margin-top: 9rem;
 }
 .messageInput{
-  font-size: 2rem;
+  font-size: 1.3rem;
   text-align: center;
   font-family: "Yanone Kaffeesatz", sans-serif;
   padding: 6rem;
@@ -187,7 +208,7 @@
 }
 .messageButton{
   font-family: "Yanone Kaffeesatz", sans-serif;
-  font-size: 2rem;
+  font-size: 1rem;
   margin-top: 2rem;
   border-radius: 3rem;
   background-color: #9fc9f9;
@@ -196,7 +217,7 @@
 }
 .messageButtonStart{
   font-family: "Yanone Kaffeesatz", sans-serif;
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin-top: 1rem;
   border-radius: 3rem;
   background-image: radial-gradient(rgb(254, 254, 254), rgb(247, 198, 235), rgb(255, 201, 234));
@@ -221,15 +242,11 @@
 .contact{
   list-style: none;
   color: whitesmoke;
-  font-size: 2rem;
+  font-size: 1.4rem;
+  padding: 1rem;
   font-family: "Yanone Kaffeesatz", sans-serif;
 }
-.container {
-  display: flex;
-  justify-content: space-between; 
-  align-items: flex-start; 
-  width: 100%; 
-}
+
 
 
 
@@ -265,74 +282,79 @@ h1,h3,h2 {
 @media (min-width: 768px) {
   
 }
-
 @media (min-width: 600px) {
-  .about{
-    margin-right: 4rem;
-  }
+  
   
 }
 
 @media (max-width: 600px) {
   /* head */
-  .mainContainer{
+  .mainContainer {
     width: 100%;
   }
-  .header{
-    flex-direction: column;
-    margin-left: 10rem;
-    margin-top: 2rem;
+  .imgPort{
+    width: 100px;
   }
-  .headerText{
-    font-size: 1.9rem;
-    margin-right: 1.5rem;
+  .header {
+    flex-direction: column;
+    margin-left: 0; /* Justera eller ta bort margin */
+    margin-top: 1rem; /* Mindre marginaler */
+  }
+
+  .headerText {
+    font-size: 1.5rem; /* Justera storleken för att passa små skärmar */
+    margin-right: 0; /* Ta bort marginaler som kan orsaka problem */
   }
 
   /* skills */
-  .container{
+  .container {
     width: 100%;
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 6rem;
+    margin-left: 0; /* Justera eller ta bort margin */
   }
 
   /* about */
-  .about{
+  .about {
     display: flex;
     flex-direction: column;
-    margin-left: 15rem;
+    margin-left: 0; /* Justera eller ta bort margin */
   }
-  .imgRelaxt{
-    padding-top: 4rem;
+
+  .imgRelaxt {
+    padding-top: 2rem; /* Mindre padding för små skärmar */
   }
-  .aboutText{
-    margin-left: 10rem;
+
+  .aboutText {
+    margin-left: 0; /* Justera eller ta bort margin */
   }
 
   /* skills ex */
-  .portfolioContainer{
+  .portfolioContainer {
     display: flex;
     flex-direction: column;
-    margin-left: 10rem;
+    margin-left: 0; /* Justera eller ta bort margin */
   }
 
   /* message container */
-  .messageButtonStart{
-    margin-left: 6rem;
-    margin-top: 2rem;
+  .messageButtonStart {
+    margin-left: 0; /* Justera eller ta bort margin */
+    margin-top: 1rem; /* Mindre marginaler */
   }
-  .commentForm{
-    margin-left: 7rem;
+
+  .commentForm {
+    margin-left: 0; /* Justera eller ta bort margin */
   }
 
   /* footer */
-  .contactfooter{
+  .contactfooter {
     flex-direction: column;
-    margin-left: 6rem;
+    margin-left: 0; /* Justera eller ta bort margin */
   }
 }
+
 
 
 

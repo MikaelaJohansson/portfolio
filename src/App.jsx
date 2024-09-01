@@ -52,12 +52,12 @@ function App() {
   
   const slideInFromLeft = {
     hidden: { x: -100, opacity: 0 },
-    visible: { x: 0, opacity: 1, transition: { duration: 6 } } // Mer långsam slide-in
+    visible: { x: 0, opacity: 1, transition: { duration: 2 } } // Mer långsam slide-in
   };
   
   const slideInFromRight = {
     hidden: { x: 100, opacity: 0 },
-    visible: { x: 0, opacity: 1, transition: { duration: 6 } } // Mer långsam slide-in
+    visible: { x: 0, opacity: 1, transition: { duration: 2 } } // Mer långsam slide-in
   };
   
   
@@ -71,7 +71,7 @@ function App() {
           className={styles.imgPort}
           src="/img/jag_a.png"
           alt="jag"
-          width={400}
+          width={300}
         />
         <div>
           <motion.h1
@@ -130,33 +130,7 @@ function App() {
 
       <div className={styles.skills}>
         <div className={styles.container}>
-          <div className={styles.leftSide}>
-            <motion.div
-              variants={slideInFromLeft}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-            >
-              <div className={styles.progressItem}>
-                <ProgressBar percentage={65} width={500} height={100} />
-                <ul className={styles.ul}>
-                  <li className={styles.liSkills}><img src='/img/html.png' alt="HTML" width={20} className={styles.imgLog} />HTML</li>
-                  <li className={styles.liSkills}><img src='/img/css.png' alt="CSS" width={25} className={styles.imgLog} />CSS</li>
-                  <li className={styles.liSkills}><img src='/img/bootstrap.png' alt="Bootstrap" width={27} className={styles.imgLog} />Bootstrap</li>
-                </ul>
-              </div>
-              <div className={styles.progressItem}>
-                <ProgressBar percentage={60} width={500} height={100} />
-                <ul className={styles.ul}>
-                  <li className={styles.liSkills}><img src='/img/gitGit.png' alt="Git" width={50} className={styles.imgLog} />git</li>
-                  <li className={styles.liSkills}><img src='/img/github.png' alt="GitHub" width={30} className={styles.imgLog} />GitHub</li>
-                  <li className={styles.liSkills}><img src='/img/figma.png' alt="Figma" width={23} className={styles.imgLog} />Figma</li>
-                </ul>
-              </div>
-            </motion.div>
-          </div>
-
-          <div className={styles.animationSkill}>
+        <div className={styles.animationSkill}>
             <motion.h1
               variants={fadeIn}
               initial="hidden"
@@ -171,6 +145,33 @@ function App() {
               autoplay={true}
             />
           </div>
+          <div className={styles.leftSide}>
+            <motion.div
+              variants={slideInFromLeft}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+            >
+              <div className={styles.progressItem}>
+                <ProgressBar percentage={65} width={200}  />
+                <ul className={styles.ul}>
+                  <li className={styles.liSkills}><img src='/img/html.png' alt="HTML" width={20} className={styles.imgLog} />HTML</li>
+                  <li className={styles.liSkills}><img src='/img/css.png' alt="CSS" width={25} className={styles.imgLog} />CSS</li>
+                  <li className={styles.liSkills}><img src='/img/bootstrap.png' alt="Bootstrap" width={27} className={styles.imgLog} />Bootstrap</li>
+                </ul>
+              </div>
+              <div className={styles.progressItem}>
+                <ProgressBar percentage={60} width={200} />
+                <ul className={styles.ul}>
+                  <li className={styles.liSkills}><img src='/img/gitGit.png' alt="Git" width={50} className={styles.imgLog} />git</li>
+                  <li className={styles.liSkills}><img src='/img/github.png' alt="GitHub" width={30} className={styles.imgLog} />GitHub</li>
+                  <li className={styles.liSkills}><img src='/img/figma.png' alt="Figma" width={23} className={styles.imgLog} />Figma</li>
+                </ul>
+              </div>
+            </motion.div>
+          </div>
+
+     
 
           <div className={styles.rightSide}>
             <motion.div
@@ -180,7 +181,7 @@ function App() {
               viewport={{ once: true }}
             >
               <div className={styles.progressItem}>
-                <ProgressBar percentage={60} width={500} height={100} />
+                <ProgressBar percentage={60} width={200} />
                 <ul className={styles.ul}>
                   <li className={styles.liSkills}><img src='/img/react.png' alt="React" width={20} className={styles.imgLog} />React</li>
                   <li className={styles.liSkills}><img src='/img/api.png' alt="API" width={25} className={styles.imgLog} />API</li>
@@ -188,7 +189,7 @@ function App() {
                 </ul>
               </div>
               <div className={styles.progressItem}>
-                <ProgressBar percentage={50} width={500} height={100} />
+                <ProgressBar percentage={50} width={200} />
                 <ul className={styles.ul}>
                   <li className={styles.liSkills}><img src='/img/sql.png' alt="SQL" width={20} className={styles.imgLog} />SQL</li>
                   <li className={styles.liSkills}><img src='/img/js.png' alt="Express" width={20} className={styles.imgLog} />Express</li>
@@ -203,6 +204,7 @@ function App() {
       <br />
 
       <section className={styles.about}>
+       <div >
         <motion.img
           className={styles.imgRelaxt}
           src="/img/jag.png"
@@ -218,13 +220,14 @@ function App() {
           whileInView="visible"
           viewport={{ once: true }}
         >
-         <p className={styles.aboutText}>
-            Ålder: 37 <br />
-            Bor: Stockholm. <br />
-            Familj: Sambo, 3 hundar. <br />
-            Intressen: Historia, förhistoriska civilisationer.
-         </p>
+        <p className={styles.aboutText}>
+          Ålder: 37 <br />
+          Bor: Stockholm. <br />
+          Familj: Sambo, 3 hundar. <br />
+          Intressen: Historia, förhistoriska civilisationer.
+        </p>
         </motion.p>
+       </div>
       </section>
 
       <section className={styles.portfolioContainer}>
@@ -241,7 +244,7 @@ function App() {
             className={styles.snackis}
             src="/img/snackis.png"
             alt="smakprov"
-            width={500}
+            width={300}
             variants={slideInFromLeft}
             initial="hidden"
             whileInView="visible"
@@ -294,7 +297,7 @@ function App() {
             className={styles.portfolioImg}
             src="/img/portfolio.png"
             alt="smakprov"
-            width={500}
+            width={300}
             variants={slideInFromRight}
             initial="hidden"
             whileInView="visible"
