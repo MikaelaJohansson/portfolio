@@ -17,7 +17,7 @@
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin-top: 3rem;
+  margin-top: 1rem;
   border-radius: 0.5rem;
   color: rgb(204, 204, 204);
   font-size: 1.5rem;
@@ -74,18 +74,20 @@
   align-items: center;
   margin-bottom: 20px; 
   width: fit-content;
+  position: relative;
+  top: 7rem;
 }
 .rightSide{
   position: relative;
-  top: -0.4rem;
+  top: 0.4rem;
   margin-left: 2rem;
   width: fit-content;
 }
 .liSkills{
-  box-shadow: 4px 4px 5px rgb(96, 188, 249);
+  box-shadow: 4px 4px 2px rgb(43, 1, 40);
   border-radius: 3rem;
   padding-right: 1rem;
-  background-image: radial-gradient(rgb(224, 240, 250), rgb(206, 224, 248), rgb(182, 203, 246));
+  background-color: #dfe2ee;
   text-align: center;
   color: black;
   font-family: "Yanone Kaffeesatz", sans-serif;
@@ -93,15 +95,23 @@
   display: flex;
   align-items: center;
   margin: 1rem; 
+  top: 7rem;
 }
 .animationSkill{
   position: relative;
-  color: #d897f9;
+  top: 3rem;
   width: fit-content;
   font-size: 1rem;
   width: 40%;
-  margin-left:6rem ;
-  padding: 2rem;
+  margin-left:5rem ;
+ 
+}
+.skillsH1{
+ color: #c299f7;
+ position: relative;
+ top: 4rem;
+ left: 7rem;
+ font-size: 1.8rem;
 }
 
 /* about */
@@ -111,19 +121,19 @@
   padding-right: 15rem;
 }
 .about {
-  background-image: radial-gradient(circle, rgb(245, 244, 249), rgb(218, 188, 246), rgb(224, 228, 248));
+  background-color: #cae0ce;
   display: flex;
   align-items: center;
   justify-content: center;
   align-content: center;
-  margin-top: 6rem;
+  margin-top: 20rem;
   margin-bottom: 9rem;
   border-radius: 0.5rem;
   color: black;
   width: fit-content;
   font-size: 1.3rem;
   position: relative; 
-  box-shadow: 1px 1px 10px #c299f7;
+  box-shadow: 1px 1px 10px #0e021e;
   font-family: "Yanone Kaffeesatz", sans-serif;
   padding: 3rem;
   font-weight: 400;
@@ -147,15 +157,16 @@
   box-shadow: 1px 1px 20px  #212945;
 }
 .skillsSnackis{
-  box-shadow: 3px 3px 10px  #c7f5d3;
+  box-shadow: 5px 5px 10px  #1a0615;
   border-radius: 0.5rem;
   text-align: center;
   padding: 2rem;
   margin: 5rem;
   width: fit-content;
+  border: 10px solid rgb(215, 224, 233);
   color: black;
   font-size: 1.3rem;
-  background-image: radial-gradient(rgb(246, 248, 244), rgb(223, 250, 225), rgb(230, 249, 230));
+  background-color: #dfe2ee;
 }
 .portfolio{
   box-shadow: 3px 3px 10px #c7f5d3;
@@ -167,7 +178,7 @@
   padding-bottom: 3rem;
   color: black;
   font-size: 1.3rem;
-  background-image: radial-gradient(rgb(246, 248, 244), rgb(221, 248, 222), rgb(230, 249, 230));
+  background-color: #f0dee8;
 }
 .buttonLink{
   font-size: 1rem;
@@ -195,7 +206,7 @@
   border-radius: 0.3rem;
   background-color: rgb(253, 246, 247);
   color: black;
-  margin-top: 9rem;
+  margin-top: 4rem;
 }
 .messageInput{
   font-size: 1.3rem;
@@ -220,7 +231,7 @@
   font-size: 1.6rem;
   margin-top: 1rem;
   border-radius: 3rem;
-  background-image: radial-gradient(rgb(254, 254, 254), rgb(247, 198, 235), rgb(255, 201, 234));
+  background-color: rgb(242, 238, 230);
   box-shadow: 2px 4px 3px rgb(247, 158, 211)
 }
 
