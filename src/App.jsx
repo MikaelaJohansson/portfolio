@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import ProgressBar from './Components/ProgressBar'; // Kontrollera sökvägen
+import ProgressBar from './Components/ProgressBar'; 
 import './App.css';
 import styles from './portfolio.module.css';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import animationData from './assets/animation1.json';
 import Lottie from 'lottie-react';
-import emailjs from 'emailjs-com'; // Importera EmailJS
-
+import emailjs from 'emailjs-com'; 
 import { useTranslation } from 'react-i18next';
 
 
@@ -17,11 +16,8 @@ function App() {
   const [comment, setComment] = useState('');
   const [isSent, setIsSent] = useState(false);
 
-
-
   const handleShowForm = () => {
     setIsFormVisible(true);
-
   };
 
   const sendEmail = (e) => {
@@ -29,10 +25,10 @@ function App() {
 
     emailjs
       .send(
-        'service_0tm1ts1',  // Ersätt med din EmailJS service ID
-        'template_6u96c04', // Ersätt med din EmailJS template ID
-        { name, comment },  // Data som skickas till e-posten
-        'NF2rhePvNYYClVLj_'      // Ersätt med din EmailJS användar-ID
+        'service_0tm1ts1',  
+        'template_6u96c04',
+        { name, comment },  
+        'NF2rhePvNYYClVLj_'   
       )
       .then(
         (result) => {
@@ -48,34 +44,36 @@ function App() {
       );
   };
 
-  // Framer Motion Variants
+
   const fadeIn = {
     hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { duration: 1 } } // Mer långsam fade-in
+    visible: { opacity: 1, transition: { duration: 1 } } 
   };
   
   const slideInFromLeft = {
     hidden: { x: -100, opacity: 0 },
-    visible: { x: 0, opacity: 1, transition: { duration: 2 } } // Mer långsam slide-in
+    visible: { x: 0, opacity: 1, transition: { duration: 2 } } 
   };
   
   const slideInFromRight = {
     hidden: { x: 100, opacity: 0 },
-    visible: { x: 0, opacity: 1, transition: { duration: 2 } } // Mer långsam slide-in
+    visible: { x: 0, opacity: 1, transition: { duration: 2 } } 
   };
   
   
-  const { t, i18n } = useTranslation();  // Använd 't' för att översätta text
+  const { t, i18n } = useTranslation();  
 
   const handleChangeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
 
+
+
   return (
     <div className={styles.mainContainer}>
       
-      <button onClick={() => handleChangeLanguage('en')}>English</button>
-      <button onClick={() => handleChangeLanguage('sv')}>Svenska</button>
+      <button  className={styles.translate} onClick={() => handleChangeLanguage('en')}>English</button>
+      <button  className={styles.translate} onClick={() => handleChangeLanguage('sv')}>Svenska</button>
 
       <section className={styles.header}>
         <img
@@ -178,8 +176,6 @@ function App() {
             </motion.div>
           </div>
 
-     
-
           <div className={styles.rightSide}>
             <motion.div
               variants={slideInFromRight}
@@ -207,11 +203,7 @@ function App() {
           </div>
         </div>
       </div>
-
       <br />
-
-     
-
       <section className={styles.portfolioContainer}>
         <div className={styles.skillsSnackis}>
           <motion.h2
@@ -248,7 +240,7 @@ function App() {
             className={styles.buttonLink}
             href="https://github.com/MikaelaJohansson/react-chat-app.git"
             target="_blank"
-            rel="noopener noreferrer" // För säkerhet, skyddar mot relaterade säkerhetsproblem
+            rel="noopener noreferrer" 
           >
             GitHub
           </a>
@@ -256,7 +248,7 @@ function App() {
             className={styles.buttonLink}
             href="https://snackis.netlify.app"
             target="_blank"
-            rel="noopener noreferrer" // För säkerhet, skyddar mot relaterade säkerhetsproblem
+            rel="noopener noreferrer" 
           >
             {t('Hemsida')} 
           </a>
@@ -337,8 +329,6 @@ function App() {
         </motion.p>
        </div>
       </section>
-
-
 
       <div className={styles.messageContainer}>
         {!isFormVisible && (

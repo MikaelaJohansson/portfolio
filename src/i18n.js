@@ -1,7 +1,7 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
-// Översättningsdata för engelska och svenska
+
 const resources = {
   en: {
     translation: {
@@ -52,15 +52,14 @@ const resources = {
   }
 };
 
-// Initiera i18next
 i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: 'sv', // Standard språk
-    fallbackLng: 'en', // Fallback språk
+    lng: 'sv', 
+    fallbackLng: 'en', 
     interpolation: {
-      escapeValue: false // React skyddar redan mot XSS
+      escapeValue: false 
     }
   });
 

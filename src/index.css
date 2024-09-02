@@ -1,5 +1,4 @@
 
-
 a {
   font-weight: 500;
   color: #646cff;
@@ -13,7 +12,7 @@ body {
  
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient( rgb(3, 28, 64) 10.1%, rgb(5, 5, 27) ); /* Horisontell centrering */
+  background: linear-gradient( rgb(3, 28, 64) 10.1%, rgb(5, 5, 27) ); 
 }
 
 h1 {
