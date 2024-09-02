@@ -79,7 +79,7 @@
 }
 .rightSide{
   position: relative;
-  top: 0.4rem;
+  top: 0.8rem;
   margin-left: 2rem;
   width: fit-content;
 }
@@ -106,44 +106,12 @@
   margin-left:5rem ;
  
 }
-.skillsH1{
+.skillsH2{
  color: #c299f7;
  position: relative;
  top: 4rem;
  left: 7rem;
  font-size: 1.8rem;
-}
-
-/* about */
-.aboutText{
-  margin-left: 30rem;
-  width: fit-content;
-  padding-right: 15rem;
-}
-.about {
-  background-color: #cae0ce;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  margin-top: 20rem;
-  margin-bottom: 9rem;
-  border-radius: 0.5rem;
-  color: black;
-  width: fit-content;
-  font-size: 1.3rem;
-  position: relative; 
-  box-shadow: 1px 1px 10px #0e021e;
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  padding: 3rem;
-  font-weight: 400;
-}
-.imgRelaxt {
-  width: 300px; 
-  height: auto;
-  position: absolute; 
-  top: -92px; 
-  left: -50px; 
 }
 
 /* portfolio show */
@@ -174,7 +142,7 @@
   text-align: center;
   padding: 2rem;
   width: fit-content;
-  padding-top: 3rem;
+  padding-top: 4rem;
   padding-bottom: 3rem;
   color: black;
   font-size: 1.3rem;
@@ -195,6 +163,39 @@
   align-content: center;
   align-items: center;
   width: 50%;
+  margin-top: 9rem;
+}
+
+/* about */
+.aboutText{
+  margin-left: 9rem;
+  width: fit-content;
+  padding-right: 2rem;
+}
+.about {
+  background-color: #cae0ce;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-top: 10rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  color: black;
+  width: fit-content;
+  font-size: 1.3rem;
+  position: relative; 
+  box-shadow: 1px 1px 10px #0e021e;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  padding: 3rem;
+  font-weight: 400;
+}
+.imgRelaxt {
+  width: 300px; 
+  height: auto;
+  position: absolute; 
+  top: -92px; 
+  left: -50px; 
 }
 
 /* send message */
@@ -280,26 +281,12 @@ h1,h3,h2 {
   font-family: "Yanone Kaffeesatz", sans-serif;
 }
 
+
+
+
 /* media querys */
 
-@media (min-width: 1200px) {
-  
-}
-
-@media (min-width: 992px) {
-  
-}
-
-@media (min-width: 768px) {
-  
-}
-@media (min-width: 600px) {
-  
-  
-}
-
-@media (max-width: 600px) {
-  /* head */
+@media (max-width: 900px) {
   .mainContainer {
     width: 100%;
   }
@@ -308,13 +295,13 @@ h1,h3,h2 {
   }
   .header {
     flex-direction: column;
-    margin-left: 0; /* Justera eller ta bort margin */
-    margin-top: 1rem; /* Mindre marginaler */
+    margin-left: 0; 
+    margin-top: 1rem; 
   }
 
   .headerText {
-    font-size: 1.5rem; /* Justera storleken för att passa små skärmar */
-    margin-right: 0; /* Ta bort marginaler som kan orsaka problem */
+    font-size: 1.5rem; 
+    margin-right: 0; 
   }
 
   /* skills */
@@ -324,46 +311,88 @@ h1,h3,h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 0; /* Justera eller ta bort margin */
+    margin-left: 0; 
   }
 
   /* about */
   .about {
     display: flex;
     flex-direction: column;
-    margin-left: 0; /* Justera eller ta bort margin */
-  }
-
-  .imgRelaxt {
-    padding-top: 2rem; /* Mindre padding för små skärmar */
-  }
-
-  .aboutText {
-    margin-left: 0; /* Justera eller ta bort margin */
+    margin-left: 0; 
   }
 
   /* skills ex */
   .portfolioContainer {
     display: flex;
     flex-direction: column;
-    margin-left: 0; /* Justera eller ta bort margin */
+    margin-left: 0;
   }
 
   /* message container */
   .messageButtonStart {
-    margin-left: 0; /* Justera eller ta bort margin */
-    margin-top: 1rem; /* Mindre marginaler */
-  }
-
-  .commentForm {
-    margin-left: 0; /* Justera eller ta bort margin */
+    margin-left: 0; 
+    margin-top: 1rem; 
   }
 
   /* footer */
   .contactfooter {
     flex-direction: column;
-    margin-left: 0; /* Justera eller ta bort margin */
+    margin-left: 0; 
   }
+}
+
+
+@media (max-width: 600px) {
+ /* head */
+  .mainContainer {
+    width: 100%;
+  }
+  .imgPort{
+    width: 100px;
+  }
+  .header {
+    flex-direction: column;
+    margin-left: 0; 
+    margin-top: 1rem; 
+  }
+  .headerText {
+    font-size: 1.5rem;
+  }
+
+  /* about */
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+  .imgRelaxt {
+    width: 300px;
+    margin-top: 1.3rem;
+  }
+
+  /* skills ex */
+  .portfolioContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0; 
+  }
+
+  /* message container */
+  .messageButtonStart {
+    margin-left: 0; 
+    margin-top: 1rem; 
+  }
+
+  .commentForm {
+    margin-left: 0; 
+  }
+
+  /* footer */
+  .contactfooter {
+    flex-direction: column;
+    margin-left: 0; 
+  }
+
+  
 }
 
 

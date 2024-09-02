@@ -153,7 +153,7 @@ function App() {
               whileInView="visible"
               viewport={{ once: true }}
             >
-              <h2 className={styles.skillsH1}> Färdigheter</h2>
+              <h2 className={styles.skillsH2}> Färdigheter</h2>
               <div className={styles.progressItem}>
                 <ProgressBar percentage={65} width={200}  />
                 <ul className={styles.ul}>
@@ -205,32 +205,7 @@ function App() {
 
       <br />
 
-      <section className={styles.about}>
-       <div >
-        <motion.img
-          className={styles.imgRelaxt}
-          src="/img/jag.png"
-          alt="jag"
-          variants={slideInFromLeft}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        />
-        <motion.p
-          variants={fadeIn}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        >
-        <p className={styles.aboutText}>
-          Ålder: 37 <br />
-          Bor: Stockholm. <br />
-          Familj: Sambo, 3 hundar. <br />
-          Intressen: Historia, förhistoriska civilisationer.
-        </p>
-        </motion.p>
-       </div>
-      </section>
+     
 
       <section className={styles.portfolioContainer}>
         <div className={styles.skillsSnackis}>
@@ -340,8 +315,38 @@ function App() {
         </div>
       </section>
 
+      <section className={styles.about}>
+       <div >
+        <motion.img
+          className={styles.imgRelaxt}
+          src="/img/jag.png"
+          alt="jag"
+          variants={slideInFromLeft}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        />
+        <motion.p
+          variants={fadeIn}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+        <p className={styles.aboutText}>
+          Ålder: 37 <br />
+          Bor: Stockholm. <br />
+          Familj: Sambo, 3 hundar. <br />
+          Intressen: Historia, förhistoriska civilisationer.
+        </p>
+        </motion.p>
+       </div>
+      </section>
+
+
+
       <div className={styles.messageContainer}>
         {!isFormVisible && (
+          
           <button onClick={handleShowForm} className={styles.messageButtonStart}>
             Skicka meddelande till mig
           </button>
