@@ -119,7 +119,9 @@ function App() {
             viewport={{ once: true }}
           >
             <div className="translated-text">
-              {t('intro')}
+              {t('1')} <br /><br />
+              {t('2')} <br /><br />
+              {t('3')} <br /><br />
             </div>
 
             
@@ -232,7 +234,8 @@ function App() {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            {t('Snackis')} 
+            {t('4')} <br />
+            {t('5')} 
             
           </motion.p>
           <br />
