@@ -32,7 +32,7 @@ function App() {
       )
       .then(
         (result) => {
-          alert('Meddelande skickat');
+          alert(t('alert'));
           console.log(result.text);
           setIsSent(true);
           setName('');
@@ -234,7 +234,7 @@ function App() {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            {t('4')} <br />
+            {t('4')} <br /> <br />
             {t('5')} 
             
           </motion.p>
@@ -342,7 +342,6 @@ function App() {
         )}
         {isFormVisible && (
           <form onSubmit={sendEmail} className={styles.commentForm}>
-            {isSent && <p>Tack för din kommentar!</p>}
             <input
               className={styles.messageName}
               type="text"

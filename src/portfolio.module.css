@@ -32,17 +32,18 @@
 }
 .headerText{
   text-align:left;
-  font-size: 1.5rem; 
+  font-size: 1.3rem; 
   width: fit-content;
   margin-top: 5rem;
   margin-bottom: 8rem;
+  color: rgb(229, 229, 229);
 }
 .cvLank{
   font-size: 1.2rem;
   box-shadow: 1px 1px 2px rgb(22, 22, 21);
   padding: 0.7rem;
   border-radius: 2rem;
-  color: #5c515b;
+  color: #453c44;
   width: fit-content;
   background-color:rgb(221, 208, 221);
 }
@@ -128,30 +129,30 @@
 }
 .portfolioImg{
   border-radius: 1rem;
-  box-shadow: 1px 1px 20px  #212945;
+  box-shadow: 1px 1px 20px  #f5d4f3;
 }
 .skillsSnackis{
   box-shadow: 4px 4px 4px #c299f7;
   border-radius: 0.5rem;
   text-align: center;
-  padding: 2rem;
+  padding: 0.5rem;
   margin: 5rem;
   width: fit-content;
   border: 10px solid rgb(215, 224, 233);
   color: black;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   background-color: #dfe2ee;
 }
 .portfolio{
   box-shadow: 4px 4px 4px #c299f7;
   border-radius: 0.5rem;
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
   width: fit-content;
-  padding-top: 6rem;
-  padding-bottom: 3rem;
+  position: relative;
+  top: -2.5rem;
   color: black;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   background-color: #f0dee8;
 }
 .buttonLink{
@@ -189,7 +190,7 @@
   border-radius: 0.5rem;
   color: black;
   width: fit-content;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   position: relative; 
   box-shadow: 3px 4px 5px #c299f7;
   font-family: "Yanone Kaffeesatz", sans-serif;
@@ -273,7 +274,7 @@
   margin: 0;
 }
 p {
-  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-family:sans-serif;
   margin: 0;
   flex: 1;
   z-index: 1;
