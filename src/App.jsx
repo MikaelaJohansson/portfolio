@@ -8,12 +8,16 @@ import animationData from './assets/animation1.json';
 import Lottie from 'lottie-react';
 import emailjs from 'emailjs-com'; // Importera EmailJS
 
+import { useTranslation } from 'react-i18next';
+
 
 function App() {
   const [isFormVisible, setIsFormVisible] = useState(false);
   const [name, setName] = useState('');
   const [comment, setComment] = useState('');
   const [isSent, setIsSent] = useState(false);
+
+
 
   const handleShowForm = () => {
     setIsFormVisible(true);
@@ -61,10 +65,17 @@ function App() {
   };
   
   
-  
+  const { t, i18n } = useTranslation();  // Använd 't' för att översätta text
+
+  const handleChangeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
 
   return (
     <div className={styles.mainContainer}>
+      
+      <button onClick={() => handleChangeLanguage('en')}>English</button>
+      <button onClick={() => handleChangeLanguage('sv')}>Svenska</button>
 
       <section className={styles.header}>
         <img
@@ -88,7 +99,7 @@ function App() {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            Frontend-utvecklare / söker LIA
+              {t('frontend')} 
           </motion.h3>
           <br />
           <motion.a
@@ -100,7 +111,7 @@ function App() {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            Ladda ner mitt CV
+            {t('CV')}
           </motion.a>
           <motion.p
             className={styles.headerText}
@@ -109,19 +120,11 @@ function App() {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            Jag studerar till frontend-utvecklare med inriktning mot webbsäkerhet <br />
-            jag har i min utbildning fått kunskaper inom både frontend- och backend-utveckling. <br />
-            Jag kan utveckla användargränssnitt med HTML, CSS, JavaScript och React.
-            <br />
-            <br />
-            På backend-sidan har jag erfarenhet av databaser och serverhantering <br />
-            med Node.js, Express, samt SQL och NoSQL-databaser. <br />
-            Jag har även utbildning i
-            webbsäkerhet och kan skydda mot vanliga hot som <br /> XSS, CSRF och SQL-injektioner.
-            <br />
-            <br />
-            Jag är självgående och strävar efter att förbättra min
-            kodningshastighet <br /> och effektivitet, och ser varje dag som en ny möjlighet att lära mig mer <br /> om den ständigt utvecklande webbutvecklingsvärlden.
+            <div className="translated-text">
+              {t('intro')}
+            </div>
+
+            
           </motion.p>
         </div>
       </section>
@@ -153,7 +156,9 @@ function App() {
               whileInView="visible"
               viewport={{ once: true }}
             >
-              <h2 className={styles.skillsH2}> Färdigheter</h2>
+                  <h2 className={styles.skillsH2}>
+                    {t('Färdigheter')} 
+                  </h2>
               <div className={styles.progressItem}>
                 <ProgressBar percentage={65} width={200}  />
                 <ul className={styles.ul}>
@@ -235,12 +240,8 @@ function App() {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            Ett av mina projekt som speglar min nuvarande kompetensnivå.
-            Projektet är en chattapplikation där användare kan skapa ett konto,
-            logga in, skriva och posta meddelanden samt bjuda in andra till chattar.
-            Applikationen innehåller: <br /><strong>Vite, API:er, Git/GitHub, lösenordsskyddad, CSRF-Token,
-            JWT, Session-/LocalStorage, CSP policy, monitorering av loggar på Sentry,
-            Crypto.randomUUID och bilder hostas på freeimage.</strong>
+            {t('Snackis')} 
+            
           </motion.p>
           <br />
           <a
@@ -257,7 +258,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer" // För säkerhet, skyddar mot relaterade säkerhetsproblem
           >
-            Hemsidan
+            {t('Hemsida')} 
           </a>
         </div>
 
@@ -288,19 +289,14 @@ function App() {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            På min portfolio kan du utforska smakprov av projekt <br />
-            och läsa mer om mina arbeten.
-            Här hittar du även en länk till min GitHub,
-            där du kan se källkoden till denna portfolio och andra projekt jag har skapat. <br />
-            Besök gärna min GitHub för att få en djupare inblick
-            i min kod och utvecklingsprocess.
+             {t('Portfolio')} 
           </motion.p>
           <br />
           <a
             className={styles.buttonLink}
             href="https://github.com/MikaelaJohansson/portfolio.git"
             target="_blank"
-            rel="noopener noreferrer" // För säkerhet, skyddar mot relaterade säkerhetsproblem
+            rel="noopener noreferrer" 
           >
             GitHub
           </a>
@@ -308,9 +304,9 @@ function App() {
             className={styles.buttonLink}
             href="https://mikisportfolio.netlify.app/"
             target="_blank"
-            rel="noopener noreferrer" // För säkerhet, skyddar mot relaterade säkerhetsproblem
+            rel="noopener noreferrer" 
           >
-            Hemsidan
+            {t('Hemsida')} 
           </a>
         </div>
       </section>
@@ -333,10 +329,10 @@ function App() {
           viewport={{ once: true }}
         >
         <p className={styles.aboutText}>
-          Ålder: 37 <br />
-          Bor: Stockholm. <br />
-          Familj: Sambo, 3 hundar. <br />
-          Intressen: Historia, förhistoriska civilisationer.
+          {t('Ålder')} <br />
+          {t('Bor')} <br />
+          {t('Familj')} <br />
+          {t('Intressen')} <br />     
         </p>
         </motion.p>
        </div>
@@ -348,7 +344,7 @@ function App() {
         {!isFormVisible && (
           
           <button onClick={handleShowForm} className={styles.messageButtonStart}>
-            Skicka meddelande till mig
+           {t('Medelande')}
           </button>
         )}
         {isFormVisible && (
@@ -357,7 +353,7 @@ function App() {
             <input
               className={styles.messageName}
               type="text"
-              placeholder="Ditt namn"
+              placeholder= {t('Name')} 
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
@@ -366,14 +362,14 @@ function App() {
             <br />
             <textarea
               className={styles.messageInput}
-              placeholder="Din kommentar"
+              placeholder={t('Kommentar')}
               value={comment}
               onChange={(e) => setComment(e.target.value)}
               required
             ></textarea>
             <br />
             <button type="submit" className={styles.messageButton}>
-              Skicka kommentar
+            {t('Skicka')}
             </button>
           </form>
         )}
@@ -384,13 +380,13 @@ function App() {
 
       <footer className={styles.contactfooter}>
         <ul>
-          <li className={styles.contact}>Kontakta mig:</li>
-          <li className={styles.contact}>E-post: mikaela.johansson87@gmail.com</li>
-          <li className={styles.contact}>Telefon: 073 659 39 14</li>
-          <li className={styles.contact}>Plats: Stockholm, Sweden</li>
+          <li className={styles.contact}>{t('kontakt')}</li>
+          <li className={styles.contact}>{t('E-post')}</li>
+          <li className={styles.contact}>{t('Telefon')}</li>
+          <li className={styles.contact}>{t('Plats')}</li>
         </ul>
         <div className={styles.contactfooterIcon}>
-          {/* GitHub ikon och länk */}
+          
           <a href="https://github.com/MikaelaJohansson" target="_blank" rel="noopener noreferrer">
             <FaGithub size={50} />
           </a>
