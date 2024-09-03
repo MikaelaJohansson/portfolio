@@ -133,7 +133,7 @@ function App() {
 
       <div className={styles.skills}>
         <div className={styles.container}>
-        <div className={styles.animationSkill}>
+          <div className={styles.animationSkill}>
             <motion.h1
               variants={fadeIn}
               initial="hidden"
@@ -150,15 +150,16 @@ function App() {
           </div>
           
           <div className={styles.leftSide}>
+            <h2 className={styles.skillsH2}>
+              {t('Färdigheter')} 
+            </h2>
             <motion.div
               variants={slideInFromLeft}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
             >
-                  <h2 className={styles.skillsH2}>
-                    {t('Färdigheter')} 
-                  </h2>
+              
               <div className={styles.progressItem}>
                 <ProgressBar percentage={65} width={200}  />
                 <ul className={styles.ul}>

@@ -315,6 +315,10 @@ h1,h3,h2 {
     align-items: center;
     margin-left: 0; 
   }
+  .animationSkill{
+    margin-right: 5rem;
+  }
+  
 
   /* about */
   .about {
@@ -365,11 +369,18 @@ h1,h3,h2 {
   .about {
     display: flex;
     flex-direction: column;
+    width: 60%;
   }
   .imgRelaxt {
-    width: 300px;
-    margin-top: 1.3rem;
+    width: 200px;
+    margin-top: 13.4rem;
+    margin-left: 2rem; 
   }
+ /* skills */
+  
+ .skillsH2{
+  display: none;
+ }
 
   /* skills ex */
   .portfolioContainer {
@@ -377,6 +388,10 @@ h1,h3,h2 {
     flex-direction: column;
     margin-left: 0; 
   }
+  .rightSide{
+    margin-right: 2rem;
+  }
+ 
 
   /* message container */
   .messageButtonStart {
