@@ -135,17 +135,18 @@
   border-radius: 0.5rem;
   text-align: center;
   padding: 1rem;
-  width: fit-content;
+  width: 60%;
   position: relative;
-  
+  margin-right: 1rem;
   color: black;
   font-size: 1.1rem;
-  background-color: #dfe2ee;;
-  margin: 4rem;
+  background-color: #dfe2ee;
+
+  
 }
 
 .skillsSnackis video {
-  width: 100%;
+  width: 70%;
   height: auto; 
   max-width: fit-content; 
   border-radius: 1rem;
@@ -156,9 +157,9 @@
   border-radius: 0.5rem;
   text-align: center;
   padding: 1rem;
-  width: fit-content;
+  width: 60%;
   position: relative;
- 
+  margin-right: 1rem;
   color: black;
   font-size: 1.1rem;
   background-color: #f0dee8;
@@ -177,8 +178,9 @@
   justify-content: center;
   align-content: center;
   align-items: center;
-  
+  flex-direction: column;
   margin-top: 13rem;
+  width: 70%;
 }
 
 /* about */
@@ -295,6 +297,26 @@ h1,h3,h2 {
 
 
 /* media querys */
+
+@media (min-width: 1200px) {
+  .headerText {
+    font-size: 1.5rem; 
+    margin-right: 0; 
+    width: 80%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .headerMainText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+  }
+}
+
 @media (max-width: 900px) {
   .mainContainer {
     width: 100%;
@@ -311,6 +333,7 @@ h1,h3,h2 {
   .headerText {
     font-size: 1.5rem; 
     margin-right: 0; 
+    
   }
 
   /* skills */
@@ -352,8 +375,27 @@ h1,h3,h2 {
     flex-direction: column;
     margin-left: 0; 
   }
+
+  .skillsH2{
+    display: none;
+    }
+    .imgRelaxt {
+      width: 200px;
+      margin-top: 5.8rem;
+      margin-left: 2rem; 
+    }
+    .rightSide{
+      margin-right: 2rem;
+    }
 }
 
+@media (max-width: 800px){
+  .portfolioImg{
+    width: 200px;
+    margin-right: 6rem;
+  }
+  
+}
 
 @media (max-width: 600px) {
  /* head */
@@ -369,7 +411,7 @@ h1,h3,h2 {
     margin-top: 1rem; 
   }
   .headerText {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   /* about */
@@ -390,17 +432,22 @@ h1,h3,h2 {
  }
 
   /* skills ex */
-  .portfolioContainer {
+  .portfolioContainer{
     display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     flex-direction: column;
-    margin-left: 0;
-    
-  
+    margin-top: 13rem;
+    width: 100%;
   }
   .rightSide{
     margin-right: 2rem;
   }
-  
+  .portfolioImg{
+    width: 200px;
+    margin-right: 6rem;
+  }
 
   /* message container */
   .messageButtonStart {

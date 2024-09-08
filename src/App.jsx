@@ -85,7 +85,7 @@ function App() {
           alt="jag"
           width={300}
         />
-        <div>
+        <div  className={styles.headerMainText}>
           <motion.h1
             variants={fadeIn}
             initial="hidden"
@@ -222,7 +222,7 @@ function App() {
             Projekt Snackis
           </motion.h2>
           <br />
-          <motion.video
+          <motion.video 
             controls
             variants={slideInFromLeft}
             initial="hidden"
