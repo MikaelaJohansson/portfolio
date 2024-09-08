@@ -10,6 +10,8 @@ import emailjs from 'emailjs-com';
 import { useTranslation } from 'react-i18next';
 
 
+
+
 function App() {
   const [isFormVisible, setIsFormVisible] = useState(false);
   const [name, setName] = useState('');
@@ -70,6 +72,7 @@ function App() {
 
 
   return (
+
     <div className={styles.mainContainer}>
       
       <button  className={styles.translate} onClick={() => handleChangeLanguage('en')}>English</button>
@@ -207,6 +210,7 @@ function App() {
         </div>
       </div>
       <br />
+
       <section className={styles.portfolioContainer}>
         <div className={styles.skillsSnackis}>
           <motion.h2
@@ -217,16 +221,17 @@ function App() {
           >
             Projekt Snackis
           </motion.h2>
-          <motion.img
-            className={styles.snackis}
-            src="/img/snackis.png"
-            alt="smakprov"
-            width={300}
+          <br />
+          <motion.video
+            controls
             variants={slideInFromLeft}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-          />
+          >
+            <source  src="/img/SnackisVideo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </motion.video>
           <br />
           <br />
           <motion.p
@@ -237,7 +242,6 @@ function App() {
           >
             {t('4')} <br /> <br />
             {t('5')} 
-            
           </motion.p>
           <br />
           <a
@@ -257,6 +261,7 @@ function App() {
             {t('Hemsida')} 
           </a>
         </div>
+        <br />
 
         <div className={styles.portfolio}>
           <motion.h2
@@ -267,6 +272,7 @@ function App() {
           >
             Portfolio
           </motion.h2>
+          <br />
           <motion.img
             className={styles.portfolioImg}
             src="/img/portfolio.png"
@@ -309,29 +315,29 @@ function App() {
 
       <section className={styles.about}>
        <div >
-        <motion.img
-          className={styles.imgRelaxt}
-          src="/img/jag.png"
-          alt="jag"
-          variants={slideInFromLeft}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        />
-        <motion.p
-          variants={fadeIn}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        >
-        <p className={styles.aboutText}>
-          {t('Ålder')} <br />
-          {t('Bor')} <br />
-          {t('Familj')} <br />
-          {t('Intressen')} <br />     
-        </p>
-        </motion.p>
-       </div>
+          <motion.img
+            className={styles.imgRelaxt}
+            src="/img/jag.png"
+            alt="jag"
+            variants={slideInFromLeft}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          />
+          <motion.p
+            variants={fadeIn}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+          <p className={styles.aboutText}>
+            {t('Ålder')} <br />
+            {t('Bor')} <br />
+            {t('Familj')} <br />
+            {t('Intressen')} <br />     
+          </p>
+          </motion.p>
+        </div>
       </section>
 
       <div className={styles.messageContainer}>
@@ -375,7 +381,6 @@ function App() {
         <ul>
           <li className={styles.contact}>{t('kontakt')}</li>
           <li className={styles.contact}>{t('E-post')}</li>
-          <li className={styles.contact}>{t('Telefon')}</li>
           <li className={styles.contact}>{t('Plats')}</li>
         </ul>
         <div className={styles.contactfooterIcon}>

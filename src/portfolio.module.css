@@ -125,23 +125,31 @@
 .snackis{
   border-radius: 1rem;
   box-shadow: 1px 1px 20px  #212945;
-  
 }
 .portfolioImg{
   border-radius: 1rem;
   box-shadow: 1px 1px 20px  #f5d4f3;
 }
-.skillsSnackis{
+.skillsSnackis {
   box-shadow: 4px 4px 4px #c299f7;
   border-radius: 0.5rem;
   text-align: center;
-  padding: 0.5rem;
-  margin: 5rem;
+  padding: 1rem;
   width: fit-content;
-  border: 10px solid rgb(215, 224, 233);
+  position: relative;
+  top: -2.5rem;
   color: black;
   font-size: 1.1rem;
-  background-color: #dfe2ee;
+  background-color: #dfe2ee;;
+  margin: 4rem;
+}
+
+.skillsSnackis video {
+  width: 100%;
+  height: auto; 
+  max-width: fit-content; 
+  border-radius: 1rem;
+  box-shadow: 1px 1px 20px #212945;
 }
 .portfolio{
   box-shadow: 4px 4px 4px #c299f7;
@@ -186,7 +194,6 @@
   justify-content: center;
   align-content: center;
   margin-top: 10rem;
-  margin-bottom: 1rem;
   border-radius: 0.5rem;
   color: black;
   width: fit-content;
@@ -220,7 +227,7 @@
   font-size: 1.3rem;
   text-align: center;
   font-family: "Yanone Kaffeesatz", sans-serif;
-  padding: 6rem;
+  padding: 5rem;
   border-radius: 0.3rem;
   background-color: rgb(253, 246, 247);
   color: black;
