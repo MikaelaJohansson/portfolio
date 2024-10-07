@@ -27,6 +27,7 @@ const resources = {
       "Plats":"Location: Stockholm, Sweden",
       "E-post":" E-Mail: mikaela.johansson87@gmail.com",
       "alert": "Thank you for your message",
+      "6":"A simple cooking application. Search for a dish or browse through the categories to find something delicious to cook.",
     }
   },
   sv: {
@@ -53,6 +54,7 @@ const resources = {
       "E-post":" mikaela.johansson87@gmail.com",
       "Plats":"Stockholm, Sweden",
       "alert":"Tack för dit meddelande",
+      "6":"En enkel matlagningsapplikation. Sök efter en maträtt eller bläddra bland kategorierna för att hitta något läckert att laga.",
     }
   }
 };

@@ -212,6 +212,7 @@ function App() {
       <br />
 
       <section className={styles.portfolioContainer}>
+        {/* första sidan */}
         <div className={styles.skillsSnackis}>
           <motion.h2
             variants={fadeIn}
@@ -261,8 +262,58 @@ function App() {
             {t('Hemsida')} 
           </a>
         </div>
+        {/* andra sidan */}
         <br />
-
+        <div className={styles.skillsSnackisFood}>
+          <motion.h2
+            variants={fadeIn}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            Projekt Kitchen Creations
+          </motion.h2>
+          <br />
+          <motion.video 
+            controls
+            variants={slideInFromLeft}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            <source  src="/img/Kitchen Creationst - Google Chrome 2024-10-07 20-19-50.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </motion.video>
+          <br />
+          <br />
+          <motion.p
+            variants={slideInFromLeft}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            {t('6')} 
+          </motion.p>
+          <br />
+          <a
+            className={styles.buttonLink}
+            href="https://github.com/MikaelaJohansson/food-app.git"
+            target="_blank"
+            rel="noopener noreferrer" 
+          >
+            GitHub
+          </a>
+          <a
+            className={styles.buttonLink}
+            href="https://kitchen-creation.netlify.app"
+            target="_blank"
+            rel="noopener noreferrer" 
+          >
+            {t('Hemsida')} 
+          </a>
+        </div>
+        <br />
+        {/* tredje sidan portfolio kod */}
         <div className={styles.portfolio}>
           <motion.h2
             variants={fadeIn}
@@ -313,6 +364,7 @@ function App() {
         </div>
       </section>
 
+      {/* om mig */}
       <section className={styles.about}>
        <div >
           <motion.img
